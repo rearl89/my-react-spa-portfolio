@@ -1,8 +1,9 @@
 import React from "react";
+import { Layout } from "./layout";
 
 export default function Pics() {
     return (
-        <div>
+        <Layout>
             This is the pics page.
-        </div>
+        </Layout>
 )}
