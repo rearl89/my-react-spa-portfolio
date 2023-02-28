@@ -38,11 +38,15 @@ class Main extends Component {
       
       render() {
         return (
-          <div>
-            <img src={this.state.picList[this.state.index]} style={{"maxHeight":"40%","maxWidth":"40%"}} /> <br/>
-            <button style={{"fontSize":"18px"}} onClick={this.onClickPrevious}> Previous </button>
-            <button style={{"margin-left":"5px", "fontSize":"18px"}} onClick={this.onClickNext}> Next </button>
+        <div>
+          <div className="flex justify-center">
+            <img src={this.state.picList[this.state.index]} style={{"height":"550px","maxWidth":"550px"}} />
           </div>
+            <div className="flex justify-center">
+            <button className="rounded-full bg-blue-200 w-24 border-solid border-2 border-sky-500" style={{"fontSize":"18px"}} onClick={this.onClickPrevious}> Previous </button>
+            <button className="rounded-full bg-blue-200 w-24 border-solid border-2 border-sky-500" style={{"margin-left":"5px", "fontSize":"18px"}} onClick={this.onClickNext}> Next </button>
+            </div>
+        </div>
         );
       }
 
